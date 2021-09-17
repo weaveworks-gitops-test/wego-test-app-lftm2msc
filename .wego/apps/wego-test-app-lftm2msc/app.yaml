@@ -1,0 +1,14 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-35a299e583ff27c82ada12bf2f9a0067
+  name: wego-test-app-lftm2msc
+  namespace: wego-system
+spec:
+  branch: main
+  deployment_type: kustomize
+  path: ./
+  source_type: git
+  url: ssh://git@github.com/weaveworks-gitops-test/wego-test-app-lftm2msc.git
